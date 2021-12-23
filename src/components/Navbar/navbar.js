@@ -1,12 +1,11 @@
 import React from "react";
 
-
-
 function Navbar(props) {
-  const tabs = ['About', 'Work', 'Contact', 'Resume']
+  const tabs = ["About", "Work", "Contact", "Resume"];
   return (
     <header className="navbar">
-      <nav>
+      <nav className="navigation">
+        <h1 className="nametag">Chris Bradford</h1>
         <ul className="flex-row navLayout">
           {tabs.map((tab) => (
             <li className="mx-2" key={tab}>
@@ -23,10 +22,6 @@ function Navbar(props) {
           ))}
         </ul>
       </nav>
-
-      <div id="titleName">
-        <h1>Chris Bradford</h1>
-      </div>
     </header>
   );
 }

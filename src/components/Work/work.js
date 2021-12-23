@@ -37,7 +37,7 @@ function Work() {
     ]
     
     return (
-        <section>
+        <section className='content'>
             <div className='wrapper'>
                 {projects.map((project) => (<Project project={project} key={project.title} />))}
             </div>

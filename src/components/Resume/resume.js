@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/resume/Chris_Bradford_Resume.PDF";
 function Resume() {
   return (
-    <section>
+    <section className="content">
       <br />
       <div className="download">
         <a href="resume.pdf" download="">

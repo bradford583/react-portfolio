@@ -14,12 +14,12 @@ function App() {
     switch(currentPage) {
       case 'About':
         return <About />;
-        case 'Work' :
-          return <Work />;
-          case 'Resume':
-            return <Resume />;
-            case 'Contact' :
-              return <Contact />;
+      case 'Work' :
+        return <Work />;
+      case 'Resume':
+        return <Resume />;
+      case 'Contact' :
+        return <Contact />;
     }
   };
 
@@ -27,7 +27,7 @@ function App() {
     <body>
       <section className='background'>
         <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-        <div>{renderPage(currentPage)}</div>
+        <div className='render'>{renderPage(currentPage)}</div>
         <Footer />
       </section>
     </body>
