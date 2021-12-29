@@ -1,29 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
+import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
+  const [ formState, setFormState ] = useState({ name: '', email: '', message: ''});
+  const [ errorMessage, setErrorMessage ] = useState('');
+  const { name, email, message } = formState;
+
+  function handleFormChange(e) {
+    if(e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+
+      if(!isValid) {
+        setErrorMessage('You must enter a valid email address!')
+      } else {
+        setErrorMessage('');
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required!`)
+      } else {
+        setErrorMessage('');
+      }
+    }
+
+    if(!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
-    <section className="content">
-      <div id="contact">
-        <h1>contact</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet
-          dui accumsan sit amet nulla. Cursus in hac habitasse platea dictumst
-          quisque sagittis purus sit. Neque convallis a cras semper auctor.
-          Varius quam quisque id diam. Turpis massa sed elementum tempus egestas
-          sed sed. Urna id volutpat lacus laoreet non curabitur gravida.
-          Sagittis vitae et leo duis ut diam quam nulla porttitor. Vivamus arcu
-          felis bibendum ut tristique et egestas quis ipsum. Egestas fringilla
-          phasellus faucibus scelerisque eleifend donec pretium vulputate
-          sapien. Mi sit amet mauris commodo quis. Eget dolor morbi non arcu
-          risus quis varius quam. Vestibulum rhoncus est pellentesque elit
-          ullamcorper dignissim cras. Ac auctor augue mauris augue neque gravida
-          in fermentum. Eu non diam phasellus vestibulum lorem sed. Consectetur
-          lorem donec massa sapien faucibus. Neque vitae tempus quam
-          pellentesque nec nam aliquam sem.
-        </p>
-      </div>
-    </section>
+    <section>
+            <h2>Contact</h2>
+            <form id="contact-form" onSubmit={handleSubmit}>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text alert alert-warning">{errorMessage}</p>
+                    </div>
+                )}
+
+                <div className="form-group">
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" name="name" className="form-control" defaultValue={name} onBlur={handleFormChange} />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="email">Email address:</label>
+                    <input type="email" name="email" className="form-control" defaultValue={email} onBlur={handleFormChange} />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="message">Message:</label>
+                    <textarea name="message" rows="5" className="form-control" defaultValue={message} onBlur={handleFormChange} />
+                </div>
+
+                <button type="submit" className="btn primary-button">Submit</button>
+            </form>
+        </section>
   );
 }
 
