@@ -33,7 +33,7 @@ function Contact() {
   }
 
   return (
-    <section>
+    <section className="contactForm">
             <h2>Contact</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 {errorMessage && (
