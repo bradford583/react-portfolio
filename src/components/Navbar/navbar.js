@@ -6,7 +6,7 @@ function Navbar(props) {
     <header className="navbar">
       <nav className="navigation">
         <h1 className="nametag">Chris Bradford</h1>
-        <ul className="flex-row navLayout">
+        <ul className="navLayout">
           {tabs.map((tab) => (
             <li className="mx-2" key={tab}>
               <a

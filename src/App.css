@@ -139,3 +139,29 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+.download {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.resume {
+  display: flex;
+  justify-content: space-around;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-linkActive {
+  text-decoration: underline;
+}
+
+.project-button {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}

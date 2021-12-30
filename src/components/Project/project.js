@@ -13,10 +13,10 @@ function Project({project}) {
             />
             <div className="card-body">
                     <h5 className="card-title">{title}</h5>
-                    <a href={gitHubLink} className="btn github-button" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-github-square fa-3x"></i>
+                    <a href={gitHubLink} className="project-button" target="_blank" rel="noopener noreferrer">
+                        View Github Repo
                     </a>
-                    <a href={link} className="btn primary-button" target="_blank" rel="noopener noreferrer">View Project</a>
+                    <a href={link} className="project-button" target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
         </div>
     );

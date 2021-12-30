@@ -2,14 +2,14 @@ import React from "react";
 import resume from "../../assets/resume/Chris_Bradford_Resume.PDF";
 function Resume() {
   return (
-    <section>
+    <section className="resume">
       <br />
-      <div className="download">
-        <a href={resume} download="Chris_Bradford_Resume.PDF">
+      <div>
+        <a className="download" href={resume} download="Chris_Bradford_Resume.PDF">
           Download My Resume
         </a>
       </div>
-      <div>
+      <div className="profifs">
         <h2>Proficiencies</h2>
         <ul className="skills">
           <li>HTML</li>
