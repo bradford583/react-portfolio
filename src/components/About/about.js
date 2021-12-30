@@ -10,23 +10,9 @@ function About() {
           className="aboutMe-img"
         />
         <div className="aboutMeText">
-          <h1>About</h1>
+          <h1>About Me</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Imperdiet dui accumsan sit amet nulla. Cursus in hac habitasse
-            platea dictumst quisque sagittis purus sit. Neque convallis a cras
-            semper auctor. Varius quam quisque id diam. Turpis massa sed
-            elementum tempus egestas sed sed. Urna id volutpat lacus laoreet non
-            curabitur gravida. Sagittis vitae et leo duis ut diam quam nulla
-            porttitor. Vivamus arcu felis bibendum ut tristique et egestas quis
-            ipsum. Egestas fringilla phasellus faucibus scelerisque eleifend
-            donec pretium vulputate sapien. Mi sit amet mauris commodo quis.
-            Eget dolor morbi non arcu risus quis varius quam. Vestibulum rhoncus
-            est pellentesque elit ullamcorper dignissim cras. Ac auctor augue
-            mauris augue neque gravida in fermentum. Eu non diam phasellus
-            vestibulum lorem sed. Consectetur lorem donec massa sapien faucibus.
-            Neque vitae tempus quam pellentesque nec nam aliquam sem.
+          I am a current student at the University of Utah enrolled in Full Stack Web Development bootcamp. Currently I am a General Manager in the quick service restaurant industy for the last 14 years at the same company. I started as a regular daytime lunch worker and with ambition I moved up the chain quickly and was a GM in the first 4 years of working there. I am now looking to change careers to continue to grow and be able to provide for my family. Givin the opportunity I believe I have what it takes to make those same jumps in a new career.
           </p>
           <p></p>
         </div>
