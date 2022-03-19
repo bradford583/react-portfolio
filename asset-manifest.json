@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.1d9552c7.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.8a17b80c.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.8a17b80c.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.37b83d9e.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.37b83d9e.js.map",
+    "static/js/2.33822490.chunk.js": "/react-portfolio/static/js/2.33822490.chunk.js",
+    "static/js/2.33822490.chunk.js.map": "/react-portfolio/static/js/2.33822490.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.1d9552c7.chunk.css.map": "/react-portfolio/static/css/main.1d9552c7.chunk.css.map",
+    "static/js/2.33822490.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.33822490.chunk.js.LICENSE.txt",
+    "static/media/BookFinder.png": "/react-portfolio/static/media/BookFinder.78c7ec79.png",
+    "static/media/Employee_Tracker.png": "/react-portfolio/static/media/Employee_Tracker.b3426126.png",
+    "static/media/Flix-Fix.png": "/react-portfolio/static/media/Flix-Fix.0184b65f.png",
+    "static/media/Headshot.jpg": "/react-portfolio/static/media/Headshot.904802b0.jpg",
+    "static/media/Note-Taker.png": "/react-portfolio/static/media/Note-Taker.2a239f41.png",
+    "static/media/Password_Generator.png": "/react-portfolio/static/media/Password_Generator.72749946.png",
+    "static/media/Resume_Chris_Bradford.8cfe3884.PDF": "/react-portfolio/static/media/Resume_Chris_Bradford.8cfe3884.PDF",
+    "static/media/Weather-Dashboard.png": "/react-portfolio/static/media/Weather-Dashboard.70417e1d.png",
+    "static/media/App.css": "/react-portfolio/static/media/background_image.614ab362.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37b83d9e.js",
+    "static/js/2.33822490.chunk.js",
+    "static/css/main.1d9552c7.chunk.css",
+    "static/js/main.8a17b80c.chunk.js"
+  ]
+}
