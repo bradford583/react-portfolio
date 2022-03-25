@@ -34,30 +34,11 @@ function Contact() {
 
   return (
     <section className="contactForm">
-            <h2>Contact</h2>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text alert alert-warning">{errorMessage}</p>
-                    </div>
-                )}
-
-                <div className="form-group">
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" className="form-control" defaultValue={name} onBlur={handleFormChange} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" className="form-control" defaultValue={email} onBlur={handleFormChange} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" className="form-control" defaultValue={message} onBlur={handleFormChange} />
-                </div>
-
-                <button type="submit" className="btn primary-button">Submit</button>
-            </form>
-        </section>
+            <h2>Contact Me</h2>
+            <a href="mailto:bradford583@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/chris-bradford-bb0a40212">LinkedIn</a>
+            <a href="https://github.com/bradford583">GitHub</a>
+    </section>
   );
 }
 
