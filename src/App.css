@@ -122,6 +122,11 @@ footer {
   padding: 5px;
 }
 
+.contactForm a {
+  font-weight: bold;
+  color: white;
+}
+
 .form-group label {
   margin-right: 5px;
 }
