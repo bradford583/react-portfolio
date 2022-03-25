@@ -124,7 +124,12 @@ footer {
 
 .contactForm a {
   font-weight: bold;
+  font-size: 24px;
   color: white;
+}
+
+.contactForm h2 {
+  font-size: 48px;
 }
 
 .form-group label {
