@@ -5,7 +5,7 @@ function About() {
     <section className="content">
       <div id="about">
         <img
-          src={require(`../../assets/pictures/Headshot.jpg`).default}
+          src={require(`../../assets/pictures/Profile-Pic(2).jpg`).default}
           alt="Bio-picture"
           className="aboutMe-img"
         />
